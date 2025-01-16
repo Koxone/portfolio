@@ -1,3 +1,5 @@
+/*Estilo Global*/
+
 * {
   box-sizing: border-box;
   font-family: 'Montserrat';
@@ -27,33 +29,62 @@ body {
   justify-items: center;
   align-items: center;
   place-self: center;
-  /* Usa solo una propiedad de height: */
 }
 
+/*one inicia--------------------------------------------------------------*/
 /*Contenedor*/
 .one {
   display: grid;
   grid-area: b1;
   width: 100%;
   height: 100%;
-  display: inline;
   color: white;
-  display: grid;
   grid-template-areas:
     'hello avatar'
     'git avatar';
   align-items: center;
 }
 
-/*Contenedor*/
-.about {
+.avatar {
   display: grid;
-  grid-area: b2;
-  width: 100%;
-  height: 100%;
-  margin: 0;
+  position: relative;
+  clip-path: circle(34% at center); /* Recorta el video */
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  left: -80px;
+  width: 150%;
+  grid-area: avatar;
 }
 
+.hello {
+  grid-area: hello;
+  padding: 30px 50px 30px 30px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  width: 40px;
+  gap: 15px;
+  grid-area: git;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.icons img {
+  width: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(148, 147, 147, 0.5);
+}
+/*one termina--------------------------------------------------------------*/
+
+/*two inicia--------------------------------------------------------------*/
 /*Contenedor*/
 .two {
   display: grid;
@@ -65,7 +96,20 @@ body {
   padding-left: 20px;
 }
 
-/*Contenedor hijo de buttons*/
+.study {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.currently {
+  font-size: 16px;
+  margin-right: 20px;
+}
+/*two termina--------------------------------------------------------------*/
+
+/*inner-container inicia--------------------------------------------------------------*/
 .inner-container {
   display: grid;
   grid-area: b4;
@@ -77,8 +121,8 @@ body {
 /*Contenedor Buttons*/
 .buttons {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 1fr);
+  /*grid-template-columns: 1fr;*/
+  /*grid-template-rows: repeat(5, 1fr);*/
   grid-template-areas:
     'uno'
     'dos'
@@ -91,18 +135,35 @@ body {
     'nueve'
     'diez';
   gap: 10px;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  padding: 10px;
+  width: 100%;/*100% del tama;o de su celda*/
+  height: 100%;/*100% de; tama;o de su celda*/
+  overflow: auto; /*Scroll*/
+  padding: 10px; /*Botones contra celda*/
 }
 
-button:hover {
+.button {
+  border-radius: 10px;
+  padding: 15px; /*Cambia el tama;o del boton directamente*/
+  text-align: center; /*Alineacion texto del boton*/
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  padding-right: 10px;
+  box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.5);
+  background-color: black;
+  color: white;
+}
+/*Boton Currently unavailable*/
+.uno {
+  grid-area: uno;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
   background-color: #1b2f55;
-}
-
-.buttons .uno:hover {
-  background-color: #e21313;
+  color: white;
   box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.5);
 }
 
@@ -120,9 +181,14 @@ button:hover {
   box-shadow: 0 0 5px rgba(238, 221, 221, 0.8); /* Brillo similar a una notificación */
 }
 
-.buttons :not(.uno) {
-  font-weight: 500;
-  font-size: 16px;
+button:hover {
+  background-color: #1b2f55;
+  box-shadow: 0 0 5px 8px rgba(252, 250, 250, 0.5);
+}
+
+.buttons .uno:hover {
+  background-color: #e21313;
+  box-shadow: 0 0 5px 8px rgba(255, 255, 255, 0.5);
 }
 
 /* Estilo general del scrollbar */
@@ -148,153 +214,64 @@ button:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: #3a539b; /* Cambia de color al pasar el mouse */
 }
+/*inner-container termina--------------------------------------------------------------*/
 
+/*about inicia--------------------------------------------------------------*/
+
+/*Contenedor*/
+.about {
+  display: grid;
+  grid-area: b2;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.about .three {
+  font-size: 40px;
+  padding: 30px;
+}
+
+.about .three .nonsense {
+  display: inline;
+  font-size: 30px;
+  text-align: center;
+}
+
+.klingon {
+  display: block;
+  font-size: 7px;
+  text-align: center;
+}
+
+.about .three .by {
+    font-size: 25px;
+  }
+
+/*about termina--------------------------------------------------------------*/
+
+/*designer inicia--------------------------------------------------------------*/
 /*Contenedor*/
 .designer {
   display: grid;
   grid-area: b5;
   width: 100%;
   height: 100%;
-  width: 100%;
   margin-top: 0;
   height: 100%;
 }
 
-.avatar {
-  position: relative;
-  clip-path: circle(34% at center); /* Recorta el video */
-  object-fit: cover;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  left: -80px;
-  display: grid;
-  width: 150%;
-  grid-area: avatar;
-}
-
-.icons {
-  display: flex;
-  flex-direction: row;
-  width: 40px;
-  gap: 15px;
-  grid-area: git;
-  margin-left: 30px;
-  margin-bottom: 20px;
-}
-
-.icons img {
-  width: 40px;
-  border-radius: 5px;
-  box-shadow: 0 0 4px rgba(148, 147, 147, 0.5);
-}
-
-.hello {
-  grid-area: hello;
-  padding: 30px 50px 30px 30px;
-  text-align: left;
+.four {
+  padding: 10px;
   font-size: 12px;
-  line-height: 1.5;
-  margin-right: 10px;
-  margin-bottom: 0px;
 }
-
-.study {
-  margin-top: 50px;
-  margin-left: 10px;
-  margin-bottom: 0px;
-  text-align: left;
-}
-
-.currently {
-  font-size: 16px;
-  margin-right: 20px;
-}
-
-.three {
-  font-size: 40px;
-  padding: 20px 20px 0 30px;
-}
-
-.nonsense {
-  text-align: center;
-}
-
-.uno {
-  grid-area: uno;
-  background-color: #1b2f55;
-  color: white;
-  font-weight: 600;
-  font-size: 15px;
-  padding-right: 10px;
-}
-.dos {
-  grid-area: dos;
-}
-.tres {
-  grid-area: tres;
-}
-.cuatro {
-  grid-area: cuatro;
-}
-.cinco {
-  grid-area: cinco;
-}
-
-.seis {
-  grid-area: seis;
-}
-.siete {
-  grid-area: siete;
-}
-.ocho {
-  grid-area: ocho;
-}
-.nueve {
-  grid-area: nueve;
-}
-.diez {
-  grid-area: diez;
-}
-
-.uno,
-.dos,
-.tres,
-.cuatro,
-.cinco,
-.seis,
-.siete,
-.ocho,
-.nueve,
-.diez {
-  border-radius: 10px;
-  padding: 14px;
-  text-align: left;
-  cursor: pointer;
-}
+/*designer termina--------------------------------------------------------------*/
 
 .one,
 .two,
 .three,
 .four {
   border-radius: 15px;
-}
-
-/*Estilo de todas las cajas*/
-.dos,
-.tres,
-.cuatro,
-.cinco,
-.seis,
-.siete,
-.ocho,
-.nueve,
-.diez {
-  background-color: black;
-  box-shadow: 0 0 5px rgba(148, 147, 147, 0.5);
-  color: white;
-  display: grid;
-  font-size: 16px;
 }
 
 .one,
@@ -307,20 +284,10 @@ button:hover {
   display: grid;
 }
 
-.by {
-  font-size: 25px;
-}
 
-.four {
-  padding: 10px;
-  font-size: 12px;
-}
 
-.klingon {
-  display: block;
-  font-size: 7px;
-}
 
+/*-------------------------------------------------------------------*/
 /*Mobile*/
 
 @media (min-width: 320px) and (max-width: 1020px) {
@@ -398,8 +365,9 @@ button:hover {
   }
 
   .hello {
-    padding: 10px;
+    padding: 30px;
     font-size: 14px;
+    text-align: center;
   }
 
   /* Ajustes para el contenedor .about */
@@ -414,6 +382,22 @@ button:hover {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, auto);
     padding: 5px;
+    grid-template-areas:
+      'uno'
+      'dos'
+      'tres'
+      'cuatro'
+      'cinco'
+      'seis'
+      'siete'
+      'ocho'
+      'nueve'
+      'diez';
+    gap: 10px;
+    width: 100%;
+    max-height: 300px; /* Ajusta para que solo se vean 5 botones (aproximadamente) */
+    overflow-y: auto; /* Habilita scroll vertical */
+    overflow-x: hidden;
   }
 
   .buttons .uno:hover {
@@ -447,25 +431,5 @@ button:hover {
     margin-top: 0;
     height: auto;
     text-align: center;
-  }
-
-  /* Ajustes generales del scrollbar */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: #091219;
-    border-radius: 10px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #1b2f55;
-    border-radius: 10px;
-    border: 3px solid #091219;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: #3a539b;
   }
 }
