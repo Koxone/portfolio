@@ -47,120 +47,118 @@ body {
 
 /*Contenedor*/
 .about {
-    display: grid;
-    grid-area: b2;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
-  
-  /*Contenedor*/
+  display: grid;
+  grid-area: b2;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/*Contenedor*/
 .two {
-    display: grid;
-    grid-area: b3;
-    width: 100%;
-    height: 100%;
-    font-size: 40px;
-    color: white;
-    padding-left: 20px;
-  }
+  display: grid;
+  grid-area: b3;
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+  color: white;
+  padding-left: 20px;
+}
 
-  /*Contenedor hijo de buttons*/
+/*Contenedor hijo de buttons*/
 .inner-container {
-    display: grid;
-    grid-area: b4;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
+  display: grid;
+  grid-area: b4;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
-  /*Contenedor Buttons*/
+/*Contenedor Buttons*/
 .buttons {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:
-      'uno'
-      'dos'
-      'tres'
-      'cuatro'
-      'cinco'
-      'seis'
-      'siete'
-      'ocho'
-      'nueve'
-      'diez';
-    gap: 10px;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    padding: 10px;
-  }
-  
-  button:hover {
-    background-color: #1b2f55;
-  }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    'uno'
+    'dos'
+    'tres'
+    'cuatro'
+    'cinco'
+    'seis'
+    'siete'
+    'ocho'
+    'nueve'
+    'diez';
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 10px;
+}
 
-  .buttons .uno:hover {
-    background-color: #e21313;
-    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.5);
+button:hover {
+  background-color: #1b2f55;
+}
 
-  }
-  
+.buttons .uno:hover {
+  background-color: #e21313;
+  box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.5);
+}
 
-  .online-status {
-    display: grid;
-    grid-area: uno;
-    align-self: center;
-    justify-self: end;
-    margin-right: 15px;
-    width: 10px; /* Diámetro del círculo */
-    height: 10px;
-    background-color: rgb(128, 26, 0); /* Color del círculo */
-    border-radius: 50%; /* Hace que sea un círculo */
-    display: inline-block; /* Asegura que se mantenga en línea con otros elementos */
-    box-shadow: 0 0 5px rgba(238, 221, 221, 0.8); /* Brillo similar a una notificación */
-  }
+.online-status {
+  display: grid;
+  grid-area: uno;
+  align-self: center;
+  justify-self: end;
+  margin-right: 15px;
+  width: 10px; /* Diámetro del círculo */
+  height: 10px;
+  background-color: rgb(128, 26, 0); /* Color del círculo */
+  border-radius: 50%; /* Hace que sea un círculo */
+  display: inline-block; /* Asegura que se mantenga en línea con otros elementos */
+  box-shadow: 0 0 5px rgba(238, 221, 221, 0.8); /* Brillo similar a una notificación */
+}
 
-  .buttons :not(.uno) {
-    font-weight: 500;
-    font-size: 16px;
-  }
+.buttons :not(.uno) {
+  font-weight: 500;
+  font-size: 16px;
+}
 
-  /* Estilo general del scrollbar */
+/* Estilo general del scrollbar */
 ::-webkit-scrollbar {
-    width: 12px; /* Ancho del scrollbar */
-    height: 12px; /* Altura para scroll horizontal */
-  }
-  
-  /* Estilo del track (fondo del scrollbar) */
-  ::-webkit-scrollbar-track {
-    background: #091219; /* Color de fondo */
-    border-radius: 10px; /* Esquinas redondeadas */
-  }
-  
-  /* Estilo del thumb (barra desplazable) */
-  ::-webkit-scrollbar-thumb {
-    background: #1b2f55; /* Color de la barra */
-    border-radius: 10px; /* Esquinas redondeadas */
-    border: 3px solid #091219; /* Espaciado interno con el track */
-  }
-  
-  /* Estilo para hover sobre el thumb */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #3a539b; /* Cambia de color al pasar el mouse */
-  }
+  width: 12px; /* Ancho del scrollbar */
+  height: 12px; /* Altura para scroll horizontal */
+}
 
-  /*Contenedor*/
+/* Estilo del track (fondo del scrollbar) */
+::-webkit-scrollbar-track {
+  background: #091219; /* Color de fondo */
+  border-radius: 10px; /* Esquinas redondeadas */
+}
+
+/* Estilo del thumb (barra desplazable) */
+::-webkit-scrollbar-thumb {
+  background: #1b2f55; /* Color de la barra */
+  border-radius: 10px; /* Esquinas redondeadas */
+  border: 3px solid #091219; /* Espaciado interno con el track */
+}
+
+/* Estilo para hover sobre el thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #3a539b; /* Cambia de color al pasar el mouse */
+}
+
+/*Contenedor*/
 .designer {
-    display: grid;
-    grid-area: b5;
-    width: 100%;
-    height: 100%;
-    width: 100%;
-    margin-top: 0;
-    height: 100%;
-  }
+  display: grid;
+  grid-area: b5;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+  height: 100%;
+}
 
 .avatar {
   position: relative;
@@ -206,7 +204,6 @@ body {
   margin-left: 10px;
   margin-bottom: 0px;
   text-align: left;
-  
 }
 
 .currently {
@@ -220,7 +217,7 @@ body {
 }
 
 .nonsense {
-    text-align: center;
+  text-align: center;
 }
 
 .uno {
@@ -292,7 +289,7 @@ body {
 .siete,
 .ocho,
 .nueve,
-.diez, {
+.diez {
   background-color: black;
   box-shadow: 0 0 5px rgba(148, 147, 147, 0.5);
   color: white;
@@ -310,7 +307,6 @@ body {
   display: grid;
 }
 
-
 .by {
   font-size: 25px;
 }
@@ -320,152 +316,155 @@ body {
   font-size: 12px;
 }
 
-
-
+.klingon {
+  display: block;
+  font-size: 7px;
+}
 
 /*Mobile*/
 
 @media (min-width: 320px) and (max-width: 1020px) {
-    /* Ajustes generales */
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-      height: auto;
-      overflow-x: hidden;
-      background-color: #091219;
-    }
-  
-    /* Contenedor principal */
-    .container {
-      width: 90%;
-      height: auto;
-      display: grid;
-      grid-template-areas:
-        'b1'
-        'b2'
-        'b3'
-        'b4'
-        'b5';
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(5, auto);
-      gap: 1rem;
-      place-self: center;
-    }
-  
-    /* Ajustes para el contenedor .one */
-    .one {
-      grid-area: b1;
-      grid-template-areas:
-        'hello'
-        'avatar'
-        'git';
-      text-align: center;
-    }
-
-    .three {
-        font-size: 2.3rem;
-        margin-bottom: 20px;
-    }
-
-    .nonsense {
-        font-size: 1.9rem;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .study {
-        margin-top: 0;
-        padding: 30px;
-    }
-
-    .currently {
-        padding: 20px;
-    }
-  
-    .avatar {
-      width: 100%;
-      left: 0;
-      clip-path: circle(50% at center); /* Asegura que se recorte bien en pantallas pequeñas */
-    }
-  
-    .icons {
-      justify-content: center;
-      margin: 10px auto;
-    }
-  
-    .hello {
-      padding: 10px;
-      font-size: 14px;
-    }
-  
-    /* Ajustes para el contenedor .about */
-    .about {
-      grid-area: b2;
-      margin: 0;
-      font-size: 1rem;
-    }
-  
-    /* Ajustes para el contenedor .buttons */
-    .buttons {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(10, auto);
-      padding: 5px;
-    }
-  
-    .buttons .uno:hover {
-      background-color: #e21313;
-      box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
-    }
-  
-    /* Ajustes para las cajas individuales */
-    .uno,
-    .dos,
-    .tres,
-    .cuatro,
-    .cinco,
-    .seis,
-    .siete,
-    .ocho,
-    .nueve,
-    .diez {
-      font-size: 14px;
-      padding: 10px;
-      text-align: center;
-    }
-
-    .inner-container {
-        overflow: hidden;
-    }
-  
-    /* Ajustes para .designer */
-    .designer {
-      grid-area: b5;
-      margin-top: 0;
-      height: auto;
-      text-align: center;
-    }
-  
-    /* Ajustes generales del scrollbar */
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-  
-    ::-webkit-scrollbar-track {
-      background: #091219;
-      border-radius: 10px;
-    }
-  
-    ::-webkit-scrollbar-thumb {
-      background: #1b2f55;
-      border-radius: 10px;
-      border: 3px solid #091219;
-    }
-  
-    ::-webkit-scrollbar-thumb:hover {
-      background: #3a539b;
-    }
+  /* Ajustes generales */
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    background-color: #091219;
   }
-  
+
+  /* Contenedor principal */
+  .container {
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-areas:
+      'b1'
+      'b2'
+      'b3'
+      'b4'
+      'b5';
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 1rem;
+    place-self: center;
+  }
+
+  /* Ajustes para el contenedor .one */
+  .one {
+    grid-area: b1;
+    grid-template-areas:
+      'hello'
+      'avatar'
+      'git';
+    text-align: center;
+  }
+
+  .three {
+    font-size: 2.3rem;
+    margin-bottom: 0px;
+  }
+
+  .nonsense {
+    font-size: 1.9rem;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .study {
+    margin-top: 0;
+    padding: 30px;
+  }
+
+  .currently {
+    padding: 20px;
+  }
+
+  .avatar {
+    width: 100%;
+    left: 0;
+    clip-path: circle(
+      50% at center
+    ); /* Asegura que se recorte bien en pantallas pequeñas */
+  }
+
+  .icons {
+    justify-content: center;
+    margin: 10px auto;
+  }
+
+  .hello {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Ajustes para el contenedor .about */
+  .about {
+    grid-area: b2;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  /* Ajustes para el contenedor .buttons */
+  .buttons {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, auto);
+    padding: 5px;
+  }
+
+  .buttons .uno:hover {
+    background-color: #e21313;
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
+  }
+
+  /* Ajustes para las cajas individuales */
+  .uno,
+  .dos,
+  .tres,
+  .cuatro,
+  .cinco,
+  .seis,
+  .siete,
+  .ocho,
+  .nueve,
+  .diez {
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .inner-container {
+    overflow: hidden;
+  }
+
+  /* Ajustes para .designer */
+  .designer {
+    grid-area: b5;
+    margin-top: 0;
+    height: auto;
+    text-align: center;
+  }
+
+  /* Ajustes generales del scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #091219;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1b2f55;
+    border-radius: 10px;
+    border: 3px solid #091219;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3a539b;
+  }
+}
