@@ -351,6 +351,7 @@ button:hover {
     grid-template-rows: repeat(5, auto);
     gap: 1rem;
     place-self: center;
+    margin-top: 30px;
   }
 
   /* Ajustes para el contenedor .one */
